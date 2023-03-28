@@ -6,7 +6,7 @@
     @dragover.prevent="dragClasses = 'bg-blue-100 shadow'"
     @dragleave.prevent="dragClasses = ''"
   >
-    <p class="text-lg w-full break-all">Text : {{ text }}</p>
+    <p class="text-lg w-full break-all mb-4">Text : {{ text }}</p>
     <div class="rounded-lg shadow-lg">
       <video
         v-if="hasCamera"
@@ -14,10 +14,23 @@
         class="mt-12 w-full rounded-lg"
       ></video>
       <!-- create div "or drag here" with upload button in center -->
-      <div class="-mt-4 flex h-full">
+      <div class="flex h-full">
         <label
           for="image"
-          class="flex place-content-center gap-2 w-full h-full p-8 pt-12 font-bold text-gray-600 hover:text-gray-800 cursor-pointer transition bg-white"
+          class="
+            flex
+            place-content-center
+            gap-2
+            w-full
+            h-full
+            p-8
+            font-bold
+            text-gray-600
+            hover:text-gray-800
+            cursor-pointer
+            transition
+            bg-white
+          "
         >
           <i class="inline"
             ><svg
@@ -34,7 +47,8 @@
               <path
                 d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z"
                 fill="currentColor"
-              /></svg></i>
+              /></svg
+          ></i>
           <p>Drop or click to upload image</p>
         </label>
         <input
@@ -53,13 +67,13 @@
 </template>
 
 <script setup lang="ts">
-import QrScanner from "qr-scanner";
+import QrScanner from 'qr-scanner';
 
 const videoElement = ref<HTMLVideoElement>();
-const text = ref("");
-const errorText = ref("");
+const text = ref('');
+const errorText = ref('');
 const hasCamera = ref(true);
-const dragClasses = ref("");
+const dragClasses = ref('');
 let qrScanner: QrScanner;
 
 function decodeError(error: Error | string) {
@@ -68,7 +82,7 @@ function decodeError(error: Error | string) {
 }
 
 async function upload(e: Event, f: File | null) {
-  text.value = "";
+  text.value = '';
   const file = f ? f : (e.target as HTMLInputElement).files?.[0];
   if (file) {
     try {
@@ -81,10 +95,10 @@ async function upload(e: Event, f: File | null) {
 }
 
 function dropHandler(e: DragEvent) {
-dragClasses.value = ''
+  dragClasses.value = '';
 
   if (e.dataTransfer?.items[0]) {
-    if (e.dataTransfer.items[0].kind === "file") {
+    if (e.dataTransfer.items[0].kind === 'file') {
       const file = e.dataTransfer.items[0].getAsFile();
       upload(e, file);
     }
@@ -112,11 +126,11 @@ onMounted(async () => {
       decodeError(error instanceof Error ? error : error);
     }
   } else {
-    decodeError("No camera found");
+    decodeError('No camera found');
   }
 });
 
 onUnmounted(() => {
-  qrScanner.destroy();
+  qrScanner?.destroy();
 });
 </script>
