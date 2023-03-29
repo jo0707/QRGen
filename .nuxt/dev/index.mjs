@@ -1,25 +1,25 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/projects/github-dfrmau/node_modules/.pnpm/node-fetch-native@1.0.2/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/node-fetch-native@1.0.2/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/std-env@3.3.2/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/h3@1.6.2/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/vue-bundle-renderer@1.0.2/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/@nuxt+devalue@2.0.0/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/vue@3.2.47/node_modules/vue/server-renderer/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/ofetch@1.0.1/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/destr@1.2.2/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/unenv@1.2.2/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/hookable@5.5.1/node_modules/hookable/dist/index.mjs';
-import { snakeCase } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/scule@1.0.0/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/ohash@1.0.0/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/ufo@1.1.1/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/unstorage@1.4.1/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/unstorage@1.4.1/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///home/projects/github-dfrmau/node_modules/.pnpm/radix3@1.0.0/node_modules/radix3/dist/index.mjs';
+import { provider, isWindows } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/std-env@3.3.2/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/h3@1.6.2/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/vue-bundle-renderer@1.0.2/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/@nuxt+devalue@2.0.0/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/vue@3.2.47/node_modules/vue/server-renderer/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/ofetch@1.0.1/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/destr@1.2.2/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/unenv@1.2.2/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/hookable@5.5.1/node_modules/hookable/dist/index.mjs';
+import { snakeCase } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/scule@1.0.0/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/ohash@1.0.0/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, withQuery } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/ufo@1.1.1/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/unstorage@1.4.1/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/unstorage@1.4.1/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///home/jo/NUXT/QRGen/node_modules/.pnpm/radix3@1.0.0/node_modules/radix3/dist/index.mjs';
 
 const inlineAppConfig = {};
 
@@ -68,7 +68,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"/home/projects/github-dfrmau/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/jo/NUXT/QRGen/server/assets"}];
 
 const assets = createStorage();
 
@@ -80,10 +80,10 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/projects/github-dfrmau","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/projects/github-dfrmau/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/projects/github-dfrmau/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/projects/github-dfrmau/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/jo/NUXT/QRGen","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/jo/NUXT/QRGen/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/jo/NUXT/QRGen/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/jo/NUXT/QRGen/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -500,11 +500,11 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
-const _lazy_vL9HGN = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_JeFSmX = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_vL9HGN, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_vL9HGN, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_JeFSmX, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_JeFSmX, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -644,9 +644,9 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('/home/projects/github-dfrmau/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('/home/jo/NUXT/QRGen/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('/home/projects/github-dfrmau/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/home/jo/NUXT/QRGen/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {

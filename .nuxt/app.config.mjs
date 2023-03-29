@@ -1,5 +1,5 @@
 
-import { defuFn } from '/home/projects/github-dfrmau/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/home/jo/NUXT/QRGen/node_modules/.pnpm/defu@6.1.2/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
