@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'CameraIcon': typeof import("../components/CameraIcon.vue")['default']
+    'FlashButton': typeof import("../components/FlashButton.vue")['default']
     'TheFooter': typeof import("../components/TheFooter.vue")['default']
     'TheHeader': typeof import("../components/TheHeader.vue")['default']
     'UploadIcon': typeof import("../components/UploadIcon.vue")['default']
@@ -24,6 +25,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/.pnpm/nuxt@3.3.1/node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/.pnpm/nuxt@3.3.1/node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyCameraIcon': typeof import("../components/CameraIcon.vue")['default']
+    'LazyFlashButton': typeof import("../components/FlashButton.vue")['default']
     'LazyTheFooter': typeof import("../components/TheFooter.vue")['default']
     'LazyTheHeader': typeof import("../components/TheHeader.vue")['default']
     'LazyUploadIcon': typeof import("../components/UploadIcon.vue")['default']
@@ -49,6 +51,7 @@ declare module 'vue' {
 }
 
 export const CameraIcon: typeof import("../components/CameraIcon.vue")['default']
+export const FlashButton: typeof import("../components/FlashButton.vue")['default']
 export const TheFooter: typeof import("../components/TheFooter.vue")['default']
 export const TheHeader: typeof import("../components/TheHeader.vue")['default']
 export const UploadIcon: typeof import("../components/UploadIcon.vue")['default']
@@ -71,6 +74,7 @@ export const Head: typeof import("../node_modules/.pnpm/nuxt@3.3.1/node_modules/
 export const Html: typeof import("../node_modules/.pnpm/nuxt@3.3.1/node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/.pnpm/nuxt@3.3.1/node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyCameraIcon: typeof import("../components/CameraIcon.vue")['default']
+export const LazyFlashButton: typeof import("../components/FlashButton.vue")['default']
 export const LazyTheFooter: typeof import("../components/TheFooter.vue")['default']
 export const LazyTheHeader: typeof import("../components/TheHeader.vue")['default']
 export const LazyUploadIcon: typeof import("../components/UploadIcon.vue")['default']

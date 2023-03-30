@@ -3,14 +3,15 @@
     @dragover.prevent="dragClasses = 'bg-blue-100 shadow'" @dragleave.prevent="dragClasses = ''">
     <p class="mb-12 w-full break-all text-lg">Result : {{ text }}</p>
     <div class="rounded-lg shadow-lg">
-      <div v-if="cams && cams.length > 1" class="flex place-content-center items-center p-2 text-sm">
+      <div v-if="cams" class="flex place-content-center items-center p-2 text-sm">
         <label for="cams">
           <CameraIcon />
         </label>
-        <select class="ml-2 p-2 rounded bg-transparent hover:bg-gray-100 hover:shadow transition" v-model="activeCamId"
-          name="cams" id="cams">
+        <select class="ml-2 mr-6 p-2 rounded bg-transparent hover:bg-gray-100 hover:shadow transition"
+          v-model="activeCamId" name="cams" id="cams">
           <option v-for="c in cams" :value="c.id">{{ c.label }}</option>
         </select>
+        <FlashButton @toggle="(state) => toggleFlash(state)" />
       </div>
       <video v-if="hasCamera" ref="videoElement" class="w-full rounded-lg"></video>
       <div class="flex h-full">
@@ -73,6 +74,10 @@ onMounted(async () => {
 function decodeError(error: Error | string) {
   console.error(error);
   errorText.value = error instanceof Error ? error.message : error;
+}
+
+function toggleFlash(state: boolean) {
+  state ? qrScanner.turnFlashOn() : qrScanner.turnFlashOff();
 }
 
 async function upload(e: Event, f: File | null) {
