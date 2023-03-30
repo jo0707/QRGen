@@ -1,42 +1,46 @@
-# Nuxt 3 Minimal Starter
+<h1 align="center">QRGen - QR Generator</h1>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<p align="center">
+  <img src="screenshots/banner.png"/>
+</p>
 
-## Setup
+<p align="center">
+    A tool for creating and reading QR codes with a minimalistic design. Built with Nuxt 3, WindiCSS, Lean QR, and QR Scanner. 
+</p>
 
-Make sure to install the dependencies:
+## Frameworks
 
-```bash
-# yarn
-yarn install
+- [Nuxt 3](https://nuxt.com/)
+- [WindiCSS](https://windicss.org/)
 
-# npm
-npm install
+## JS Libraries
 
-# pnpm
-pnpm install
-```
+- [Lean QR](https://github.com/davidje13/lean-qr)
+- [QR Scanner](https://github.com/nimiq/qr-scanner)
 
-## Development Server
+## App
 
-Start the development server on http://localhost:3000
+Web : [QRGen](https://qr-gen-nu.vercel.app/)
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
+## Build
 
 ```bash
-npm run build
+git clone https://github.com/jo0707/QRGen
+cd QRGen
+pnpm install #or npm install
+
+#preview
+pnpm dev #or npm run dev
+
+#build
+pnpm build #or npm run build
+pnpm preview #or npm run preview
 ```
 
-Locally preview production build:
+## Credit
 
-```bash
-npm run preview
-```
+- ### Joshua Sinaga
+- ### [Lean QR](https://github.com/davidje13/lean-qr) by [davidje13](https://github.com/davidje13)
+- ### [QR Scanner](https://github.com/davidje13/lean-qr) by [nimiq](https://github.com/nimiq/qr-scanner)
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Feel free to contribute to this repository!
