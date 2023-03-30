@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="children:w-full mx-auto flex w-11/12 flex-col items-center justify-center md:w-90">
+    <form action="#" class="children:w-full mx-auto flex w-11/12 flex-col items-center justify-center md:w-90">
       <div>
         <textarea class="w-full rounded border border-2 border-blue-300 bg-gray-50 p-2 outline-blue-500" type="text"
           v-model="text" placeholder="Enter your text or link here" />
@@ -8,7 +8,7 @@
       <div>
         <canvas class="image-render-pixel h-full w-full" ref="canvas"></canvas>
       </div>
-      <form class="grid grid-cols-2 grid-rows-2 gap-2" action="#">
+      <div class="grid grid-cols-2 grid-rows-2 gap-2">
         <input class="w-full rounded border border-2 border-blue-300 bg-gray-50 p-2 outline-blue-500" type="text"
           placeholder="filename" v-model="filename" />
         <div class="flex items-center w-full rounded border border-2 border-blue-300 bg-gray-50 outline-blue-500">
@@ -21,8 +21,8 @@
           @click.prevent="download">
           Download
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 </template>
 
