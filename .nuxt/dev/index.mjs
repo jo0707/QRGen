@@ -831,7 +831,7 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
       default: renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>QRGen | Generate &amp; scan QR Codes instantly!</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"description\" content=\"Generate & scan QR Codes instantly!\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>QRGen | Generate &amp; scan QR Codes instantly!</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"description\" content=\"Generate & scan QR Codes instantly!\">\n<meta name=\"theme-color\" content=\"#ffffff\">\n<meta name=\"robots\" content=\"index, follow\">\n<meta name=\"author\" content=\"Joshua Sinaga, josua123690707@gmail.com\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":" lang=\"en\"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
       __proto__: null,

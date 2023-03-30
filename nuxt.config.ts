@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
       title: "QRGen | Generate & scan QR Codes instantly!",
       meta: [
         { charset: "utf-8" },
@@ -11,6 +14,10 @@ export default defineNuxtConfig({
           name: "description",
           content: "Generate & scan QR Codes instantly!",
         },
+        // add more meta tags here
+        { name: "theme-color", content: "#ffffff" },
+        { name: "robots", content: "index, follow" },
+        { name: "author", content: "Joshua Sinaga, josua123690707@gmail.com" },
       ],
     },
   },
