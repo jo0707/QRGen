@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "/home/jo/NUXT/QRGen/node_modules/.pnpm/nuxt@3.3.1/node_modules/nuxt/dist/app/entry.js": {
+  "/home/jo/NUXT/QRGen/node_modules/.pnpm/nuxt@3.3.1_eslint@8.37.0/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "/home/jo/NUXT/QRGen/node_modules/.pnpm/nuxt@3.3.1/node_modules/nuxt/dist/app/entry.js"
+    "file": "/home/jo/NUXT/QRGen/node_modules/.pnpm/nuxt@3.3.1_eslint@8.37.0/node_modules/nuxt/dist/app/entry.js"
   }
 }

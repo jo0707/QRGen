@@ -28,29 +28,28 @@
 
 <script setup lang="ts">
 import { RGBA, generate } from "lean-qr";
-import { toSvgDataURL, toSvgPath } from "lean-qr/extras/svg";
 
-const blackRGBA: RGBA = [0, 0, 0, 255];
-const whiteRGBA: RGBA = [255, 255, 255, 255];
-const canvas = ref<HTMLCanvasElement>();
-let code = generate("Hello");
-const text = ref(""),
+const blackRGBA: RGBA = [0, 0, 0, 255],
+  whiteRGBA: RGBA = [255, 255, 255, 255],
+  qrConfig = {
+    on: blackRGBA,
+    off: whiteRGBA,
+  },
+
+  canvas = ref<HTMLCanvasElement>(),
+  text = ref(""),
   filename = ref(""),
   size = ref(300);
+
+let code = generate("Hello");
 
 onMounted(() => {
   watch(text, (newText) => {
     code = generate(newText);
-    code.toCanvas(canvas.value!, {
-      on: blackRGBA,
-      off: whiteRGBA,
-    });
+    code.toCanvas(canvas.value!, qrConfig);
   });
 
-  code.toCanvas(canvas.value!, {
-    on: blackRGBA,
-    off: whiteRGBA,
-  });
+  code.toCanvas(canvas.value!, qrConfig);
 });
 
 async function download() {
@@ -58,10 +57,7 @@ async function download() {
 
   const canvas = document.createElement("canvas"),
     ctx = canvas.getContext("2d")!,
-    imgData = code.toImageData(ctx, {
-      on: blackRGBA,
-      off: whiteRGBA,
-    });
+    imgData = code.toImageData(ctx, qrConfig);
 
   canvas.width = canvas.height = size.value;
   ctx.putImageData(imgData, 0, 0);

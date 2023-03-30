@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   modules: ["nuxt-windicss", "@nuxtjs/google-fonts"],
   googleFonts: {
     families: {
-      "DM+Sans": true,
+      Inter: true,
     },
     prefetch: true,
     preconnect: true,

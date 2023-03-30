@@ -1,7 +1,9 @@
 <template>
   <div class="max-w-140 rounded p-8 text-center transition" :class="dragClasses" @drop.prevent="dropHandler"
     @dragover.prevent="dragClasses = 'bg-blue-100 shadow'" @dragleave.prevent="dragClasses = ''">
+
     <p class="mb-12 w-full break-all text-lg">Result : {{ text }}</p>
+
     <div class="rounded-lg shadow-lg">
       <div v-if="cams && cams.length > 1" class="flex place-content-center items-center p-2 text-sm">
         <label for="cams">
@@ -13,7 +15,9 @@
         </select>
         <FlashButton v-if="hasFlash" @toggle="(state) => toggleFlash(state)" />
       </div>
+
       <video v-if="hasCamera" ref="videoElement" class="w-full rounded-lg"></video>
+
       <div class="flex h-full">
         <label for="image"
           class="flex h-full w-full cursor-pointer place-content-center gap-2 bg-white p-8 font-bold text-gray-600 transition hover:text-gray-800">
@@ -23,11 +27,10 @@
         <input type="file" accept="image/*" class="hidden" id="image" @change="() => upload" />
       </div>
     </div>
+    
     <p v-if="errorText && !text" class="mt-4 text-sm text-red-500">
       {{ errorText }}
     </p>
-
-
   </div>
 </template>
 
@@ -47,7 +50,7 @@ let qrScanner: QrScanner;
 watch(activeCamId, (id) => qrScanner.setCamera(id))
 watch(text, () => navigator.vibrate(150))
 
-onMounted(async() => {
+onMounted(async () => {
   hasCamera.value = await QrScanner.hasCamera();
 
   if (hasCamera.value) {
