@@ -38,6 +38,16 @@ pnpm preview #or npm run preview
 ```
 ## Contributors
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/jo0707">
+            <img src="https://avatars.githubusercontent.com/u/65353943?v=4" width="100;" alt="jo0707"/>
+            <br />
+            <sub><b>Josua Sinaga</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 ## Credit
