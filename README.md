@@ -36,11 +36,14 @@ pnpm dev #or npm run dev
 pnpm build #or npm run build
 pnpm preview #or npm run preview
 ```
+## Contributors
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
 ## Credit
 
-- ### Joshua Sinaga
-- ### [Lean QR](https://github.com/davidje13/lean-qr) by [davidje13](https://github.com/davidje13)
-- ### [QR Scanner](https://github.com/davidje13/lean-qr) by [nimiq](https://github.com/nimiq/qr-scanner)
+- #### Joshua Sinaga
+- #### [Lean QR](https://github.com/davidje13/lean-qr) by [davidje13](https://github.com/davidje13)
+- #### [QR Scanner](https://github.com/davidje13/lean-qr) by [nimiq](https://github.com/nimiq/qr-scanner)
 
 Feel free to contribute to this repository!
