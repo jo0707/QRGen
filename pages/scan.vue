@@ -22,9 +22,9 @@
         <label for="image"
           class="flex h-full w-full cursor-pointer place-content-center gap-2 bg-white p-8 font-bold text-gray-600 transition hover:text-gray-800">
           <UploadIcon />
-          <p class="-md:text-sm">Drop or click to upload image</p>
+          <span class="-md:text-sm">Drop or click to upload image</span>
         </label>
-        <input type="file" accept="image/*" class="hidden" id="image" @change="() => upload" />
+        <input type="file" accept="image/*" class="hidden" id="image" @change="upload" />
       </div>
     </div>
     
@@ -94,7 +94,7 @@ async function upload(e: Event, fileInput: File | null) {
   const file = fileInput ? fileInput : (e.target as HTMLInputElement).files?.[0];
   if (file) {
     try {
-      text.value = await QrScanner.scanImage(file);
+      text.value = (await QrScanner.scanImage(file, {returnDetailedScanResult: true})).data;
     } catch (error: any) {
       decodeError(error instanceof Error ? error : error);
     }
